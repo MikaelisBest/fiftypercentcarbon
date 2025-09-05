@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const e=document.querySelector('.hamburger'),t=document.querySelector('.navlinks');e&&t&&e.addEventListener('click',()=>{t.classList.toggle('open')})});
