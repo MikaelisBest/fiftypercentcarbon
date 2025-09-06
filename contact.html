@@ -4,55 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us - Fifty Percent Carbon</title>
+  <link rel="stylesheet" href="assets/css/style.css"> <!-- if you have a main CSS -->
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f0f4f3;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9fafb; /* match your site background */
+      margin: 0;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      margin: 0;
     }
     .contact-form {
-      background: #ffffff;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      background-color: #ffffff;
+      padding: 2.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
       width: 100%;
       max-width: 500px;
     }
     .contact-form h2 {
+      color: #059669; /* your theme green */
       text-align: center;
-      color: #059669;
-      margin-bottom: 20px;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
     }
     .contact-form input, 
     .contact-form textarea {
       width: 100%;
-      padding: 12px 15px;
-      margin-bottom: 15px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      font-size: 16px;
-      resize: none;
+      padding: 0.85rem 1rem;
+      margin-bottom: 1rem;
+      border-radius: 0.75rem;
+      border: 1px solid #d1d5db;
+      font-size: 1rem;
+      font-family: inherit;
     }
-    .contact-form textarea {
-      min-height: 120px;
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      border-color: #059669;
+      box-shadow: 0 0 0 2px rgba(5,150,105,0.2);
     }
     .contact-form button {
       width: 100%;
-      padding: 12px;
-      background: #059669;
+      padding: 0.85rem;
+      background-color: #059669;
+      color: #fff;
+      font-size: 1rem;
       border: none;
-      border-radius: 8px;
-      color: white;
-      font-size: 16px;
+      border-radius: 0.75rem;
       cursor: pointer;
+      font-weight: 500;
       transition: background 0.3s;
     }
     .contact-form button:hover {
-      background: #047a50;
+      background-color: #047a50;
     }
   </style>
 </head>
