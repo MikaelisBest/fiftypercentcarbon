@@ -25,8 +25,10 @@
   <div class="container" style="padding:4rem 0;">
     <form class="contact-form" action="https://formspree.io/f/xpwjkzne" method="POST">
       <h2>Contact Us</h2>
-      <input type="text" name="first_name" placeholder="First Name" required>
-      <input type="text" name="last_name" placeholder="Last Name" required>
+      <div class="name-fields">
+        <input type="text" name="first_name" placeholder="First Name" required>
+        <input type="text" name="last_name" placeholder="Last Name" required>
+      </div>
       <input type="email" name="email" placeholder="Email Address" required>
       <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit" class="btn">Send</button>
