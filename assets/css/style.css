@@ -168,24 +168,22 @@ main {
 
 :focus-visible{outline:3px solid var(--ring);outline-offset:2px;border-radius:10px}
 
-/* Lead paragraph subheadings white */
+/* Lead paragraph headings */
 .lead strong {
-  color: var(--text); /* white for subheadings */
+  color: var(--text); /* white for headings */
 }
 
-/* Bullet points grey */
-.lead ul {
+/* Bullet points for brand story */
+.lead-bullets {
   color: var(--muted); /* grey bullets */
   padding-left: 1.5rem;
   margin-top: 0.5rem;
 }
 
-.lead ul li {
+.lead-bullets li {
   margin-bottom: 0.5rem;
 }
 
-/* Make bullet point text grey, even if strong */
-.lead ul li,
-.lead ul li strong {
-  color: var(--muted); /* grey text for bullets */
+.lead-bullets li strong {
+  color: var(--muted); /* bold inside bullets stays grey */
 }
