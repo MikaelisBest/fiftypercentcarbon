@@ -1,38 +1,69 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact - Fifty Percent Carbon</title>
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Fifty Percent Carbon</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .contact-form {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+    .contact-form h2 {
+      text-align: center;
+      color: #059669;
+      margin-bottom: 20px;
+    }
+    .contact-form input, 
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      resize: none;
+    }
+    .contact-form textarea {
+      min-height: 120px;
+    }
+    .contact-form button {
+      width: 100%;
+      padding: 12px;
+      background: #059669;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .contact-form button:hover {
+      background: #047a50;
+    }
+  </style>
 </head>
 <body>
-<header class="header">
-<div class="container nav">
-<a href="index.html" class="brand">
-<img src="assets/images/logo.png" alt="Logo">
-<div><div class="brand-name">FiftyPercentCarbon</div><div class="brand-sub">Tech & Stuff</div></div>
-</a>
-<nav class="navlinks">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="projects.html">Projects</a>
-<a href="privacy.html">Privacy</a>
-<a href="contact.html" class="active">Contact</a>
-</nav>
-<button class="hamburger">&#9776;</button>
-</div>
-</header>
-
-<div class="container section">
-<h2>Contact Us</h2>
-<p class="lead">You can reach us at fiftypercentcarbon@gmail.com</p>
-</div>
-
-<footer class="footer container">
-<p>&copy; 2025 Fifty Percent Carbon. All rights reserved.</p>
-</footer>
-<script src="assets/js/script.js"></script>
+  <form class="contact-form" action="https://formspree.io/f/xpwjkzne" method="POST">
+    <h2>Contact Us</h2>
+    <input type="text" name="first_name" placeholder="First Name" required>
+    <input type="text" name="last_name" placeholder="Last Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
 </body>
 </html>
