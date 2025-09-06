@@ -4,16 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us - Fifty Percent Carbon</title>
-  <link rel="stylesheet" href="assets/css/style.css"> <!-- if you have a main CSS -->
+  <link rel="stylesheet" href="assets/css/style.css"> <!-- your main CSS -->
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f9fafb; /* match your site background */
-      margin: 0;
+    /* Extra contact page tweaks */
+    .contact-container {
       display: flex;
       justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+      padding: 4rem 1rem;
+      background-color: #f9fafb; /* match site background */
+      min-height: 80vh;
     }
     .contact-form {
       background-color: #ffffff;
@@ -24,20 +23,23 @@
       max-width: 500px;
     }
     .contact-form h2 {
-      color: #059669; /* your theme green */
+      color: #059669; /* main green */
       text-align: center;
       margin-bottom: 1.5rem;
       font-weight: 600;
+      font-family: inherit;
     }
     .contact-form input, 
     .contact-form textarea {
       width: 100%;
+      max-width: 100%;
       padding: 0.85rem 1rem;
       margin-bottom: 1rem;
       border-radius: 0.75rem;
-      border: 1px solid #d1d5db;
+      border: 1px solid #d1d5db; /* same as other site inputs */
       font-size: 1rem;
       font-family: inherit;
+      box-sizing: border-box;
     }
     .contact-form input:focus,
     .contact-form textarea:focus {
@@ -45,11 +47,15 @@
       border-color: #059669;
       box-shadow: 0 0 0 2px rgba(5,150,105,0.2);
     }
+    .contact-form textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
     .contact-form button {
       width: 100%;
       padding: 0.85rem;
       background-color: #059669;
-      color: #fff;
+      color: #ffffff;
       font-size: 1rem;
       border: none;
       border-radius: 0.75rem;
@@ -63,13 +69,31 @@
   </style>
 </head>
 <body>
-  <form class="contact-form" action="https://formspree.io/f/xpwjkzne" method="POST">
-    <h2>Contact Us</h2>
-    <input type="text" name="first_name" placeholder="First Name" required>
-    <input type="text" name="last_name" placeholder="Last Name" required>
-    <input type="email" name="email" placeholder="Email Address" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit">Send</button>
-  </form>
+  <!-- Header / Navigation same as site -->
+  <header>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Contact Form -->
+  <div class="contact-container">
+    <form class="contact-form" action="https://formspree.io/f/xpwjkzne" method="POST">
+      <h2>Contact Us</h2>
+      <input type="text" name="first_name" placeholder="First Name" required>
+      <input type="text" name="last_name" placeholder="Last Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <!-- Footer same as site -->
+  <footer>
+    <p>&copy; 2025 Fifty Percent Carbon. All rights reserved.</p>
+  </footer>
 </body>
 </html>
