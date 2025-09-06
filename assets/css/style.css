@@ -16,20 +16,41 @@ body{
   color:var(--text);
 }
 
-.container{max-width:1100px;margin:0 auto;padding:24px}
-.header{position:sticky;top:0;z-index:50;backdrop-filter: blur(8px);background: rgba(17,24,39,.6);border-bottom:1px solid rgba(148,163,184,.12);}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+/* Container */
+.container{max-width:1100px;margin:0 auto;padding:0 24px}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+  background: rgba(17,24,39,.6);
+  border-bottom: 1px solid rgba(148,163,184,.12);
+  width: 100%;
+}
+.header .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text)}
 .brand img{width:40px;height:40px}
 .brand-name{font-weight:800;letter-spacing:.2px}
-.brand-sub{font-size:12px;color:var(--muted)}
 .navlinks{display:flex;gap:16px;align-items:center}
 .navlinks a{color:var(--text);text-decoration:none;padding:8px 12px;border-radius:10px;opacity:.9}
 .navlinks a:hover,.navlinks a.active{background:rgba(148,163,184,.12)}
 .hamburger{display:none;background:none;border:0;color:var(--text);font-size:22px}
+
+/* Hero */
 .hero{display:grid; grid-template-columns:1.1fr .9fr; gap:24px; align-items:center;padding:40px 0;}
 .hero h1{font-size:44px;line-height:1.1;margin:0 0 12px}
 .hero p{color:var(--muted);font-size:18px;margin:0 0 24px}
+
+/* Buttons */
 .cta{display:inline-flex;gap:10px}
 .btn{
   background:linear-gradient(135deg,var(--brand),var(--brand-2));
@@ -48,18 +69,24 @@ body{
   box-shadow:0 5px 15px rgba(16,185,129,0.35);
 }
 .btn.secondary{background:#1f2937;color:var(--text);border:1px solid rgba(148,163,184,.18)}
+
+/* Cards */
 .card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .card{background:linear-gradient(180deg, rgba(148,163,184,.08), rgba(148,163,184,.04));border:1px solid rgba(148,163,184,.12);border-radius:18px;padding:18px}
 .card h3{margin:6px 0 6px}
 .card p{margin:0;color:var(--muted)}
+
+/* Sections */
 .section{padding:28px 0}
 .section h2{margin:0 0 8px}
 .section p.lead{color:var(--muted);margin:0 0 16px}
+
+/* Footer */
 .footer{margin-top:28px;border-top:1px solid rgba(148,163,184,.12);padding:20px 0;color:var(--muted);font-size:14px}
 .footer a{color:var(--text);text-decoration:none}
 .logo{width:96px;height:auto;display:block;margin:0 auto 8px auto;}
 
-/* --- CONTACT FORM --- */
+/* Contact Form */
 .contact-form {
   background-color: var(--panel);
   padding: 3rem 2.5rem;
@@ -105,7 +132,7 @@ body{
   resize: vertical;
 }
 
-/* First + Last Name side by side on desktop */
+/* First + Last Name side by side */
 .name-fields {
   display: flex;
   gap: 1rem;
@@ -113,6 +140,16 @@ body{
 }
 .name-fields input {
   flex: 1 1 48%;
+}
+
+/* Main content wrapper */
+main {
+  padding-top:4rem;
+  padding-bottom:4rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left:24px;
+  padding-right:24px;
 }
 
 /* Responsive adjustments */
@@ -128,4 +165,5 @@ body{
     flex: 1 1 100%;
   }
 }
+
 :focus-visible{outline:3px solid var(--ring);outline-offset:2px;border-radius:10px}
