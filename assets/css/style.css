@@ -183,3 +183,9 @@ main {
 .lead ul li {
   margin-bottom: 0.5rem;
 }
+
+/* Make bullet point text grey, even if strong */
+.lead ul li,
+.lead ul li strong {
+  color: var(--muted); /* grey text for bullets */
+}
