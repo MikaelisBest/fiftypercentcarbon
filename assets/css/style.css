@@ -167,3 +167,19 @@ main {
 }
 
 :focus-visible{outline:3px solid var(--ring);outline-offset:2px;border-radius:10px}
+
+/* Make paragraph headings white */
+.lead strong {
+  color: var(--text); /* white text like the rest of headings */
+}
+
+/* Make bullet points grey like the muted text */
+.lead ul {
+  color: var(--muted); /* grey bullets */
+  padding-left: 1.5rem; /* standard indent */
+  margin-top: 0.5rem;
+}
+
+.lead ul li {
+  margin-bottom: 0.5rem;
+}
